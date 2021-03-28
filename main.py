@@ -8,6 +8,4 @@ def home():
 
 app = Client("app")
 
-with app:
-	web.run("0.0.0.0")
 app.run()
