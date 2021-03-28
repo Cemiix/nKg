@@ -1,9 +1,5 @@
-from flask import Flask
+from pyrogram import Client
 
-web = Flask(__name__)
+app = Client("app")
 
-@web.route("/")
-def index():
-	return "hello"
-
-web.run("0.0.0.0")
+app.run()
